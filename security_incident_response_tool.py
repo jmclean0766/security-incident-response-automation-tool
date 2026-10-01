@@ -1,10 +1,4 @@
-#!/usr/bin/env python3
-#python3 -m venv venv
-#source venv/bin/activate
-#deactivate
-
-#Version 11 - Final
-
+#Security Incident Response Automation Tool
 
 import sys
 import json
