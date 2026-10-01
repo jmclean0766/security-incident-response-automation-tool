@@ -1,0 +1,13 @@
+{
+    "type": "suspicious_network_activity",
+    "severity": "high",
+    "source": "192.168.1.1",
+    "timestamp": "2026-09-22T10:30:00",
+    "details": "Repeated SSH connection attempts detected",
+    "evidence": {
+        "attempt_count": 25,
+        "failed_authentications": 20,
+        "destination_port": 22,
+        "time_window": 60
+    }
+}

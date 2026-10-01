@@ -1,0 +1,11 @@
+{
+    "type": "suspicious_network_activity",
+    "severity": "medium",
+    "source": "192.168.1.2",
+    "timestamp": "2026-09-30T10:30:00",
+    "details": "Possible port scanning detected",
+    "evidence": {
+        "destination_ports": 20,
+        "time_window": 60
+    }
+}
