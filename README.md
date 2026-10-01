@@ -177,7 +177,7 @@ Displays the incident's audit trail and recorded response activity.
 ## Example
 
 ```bash
-python3 security_incident_response_tool.py add alerts/ssh_activity.json
+python3 security_incident_response_tool.py add alert_ssh.json
 ```
 
 After an incident is created, the returned incident ID can be used to begin the investigation:
