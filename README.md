@@ -153,7 +153,7 @@ This provides a record of the actions taken throughout the incident lifecycle.
 ### Create an Incident
 
 ```bash
-python3 sirat.py add <alert_file.json>
+python3 security_incident_response_tool.py add <alert_file.json>
 ```
 
 Creates an incident from a JSON alert and assigns a unique incident ID.
@@ -161,7 +161,7 @@ Creates an incident from a JSON alert and assigns a unique incident ID.
 ### Investigate an Incident
 
 ```bash
-python3 sirat.py investigate <incident_id>
+python3 security_incident_response_tool.py investigate <incident_id>
 ```
 
 Begins the investigation, evaluates the available evidence, performs the appropriate response action, and resolves the incident.
@@ -169,7 +169,7 @@ Begins the investigation, evaluates the available evidence, performs the appropr
 ### Audit an Incident
 
 ```bash
-python3 sirat.py audit <incident_id>
+python3 security_incident_response_tool.py audit <incident_id>
 ```
 
 Displays the incident's audit trail and recorded response activity.
@@ -177,19 +177,19 @@ Displays the incident's audit trail and recorded response activity.
 ## Example
 
 ```bash
-python3 sirat.py add alerts/ssh_activity.json
+python3 security_incident_response_tool.py add alerts/ssh_activity.json
 ```
 
 After an incident is created, the returned incident ID can be used to begin the investigation:
 
 ```bash
-python3 sirat.py investigate INC-001
+python3 security_incident_response_tool.py investigate INC-001
 ```
 
 The incident can then be audited:
 
 ```bash
-python3 sirat.py audit INC-001
+python3 security_incident_response_tool.py audit INC-001
 ```
 
 ## Data Storage
@@ -209,8 +209,8 @@ The project also uses a `quarantine/` directory for files isolated during malwar
 ## Project Structure
 
 ```text
-sirat/
-├── sirat.py
+security-incident-response-automation-tool/
+├── security_incident_response_tool.py
 ├── incidents.json
 ├── blocked_ips.json
 ├── monitor_ips.json
